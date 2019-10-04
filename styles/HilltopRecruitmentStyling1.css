@@ -1,0 +1,592 @@
+@font-face {
+  font-family: Gotham-Thin;
+  src: url(../fonts/Gotham-Thin.ttf);
+}
+
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../fonts/Gotham-Book.ttf);
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url(../fonts/Gotham-Light.ttf);
+}
+
+@font-face {
+  font-family: HelveticaLTStd-BoldCond_0;
+  src: url(../fonts/HelveticaLTStd-BoldCond_0.otf);
+}
+
+body{
+	margin:0;
+	padding: 0;
+}
+
+#notice{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 20px;
+	background: black;
+	
+}
+
+#notice p{
+	margin: 0;
+	font-family: Gotham-Book;
+	font-size: 0.7rem;
+	color: white;
+	text-align: center;
+}
+
+#notice p a{
+	/* text-decoration: none */;
+	color: white;
+}
+
+
+#top_header{
+	display: flex;
+	flex-direction: column;
+	
+	background: rgba(255,255,255,.95);
+	width: 100vw;
+	height: 100px;
+	border-bottom: 3px solid #D9D9D9;
+	position: fixed;
+}
+
+#top_header .top_bar{
+	display: flex;
+	justify-content: space-between;
+}
+
+#top_header .top_logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('../images/hilltop_recruitment_logo.png') no-repeat;
+	background-size: 80%;
+	height: 80px;
+	width: 100px;
+	margin: 10px 0 0 20px;
+	padding: 0;
+}
+
+
+
+#top_header .menu{
+	color: white;
+	font-family: Gotham-Light;
+	padding-right: 8vw;
+}
+
+#top_header .menu ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#top_header .menu ul li{
+	float: left;
+	padding: 20px 20px 0 0;
+}
+
+#top_header .menu ul a{
+	text-decoration: none;
+	color: black;
+}
+
+#top_header .menu ul a:hover{
+	color: #ff6b01;
+}
+
+
+
+
+
+
+#homepage_pic{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	height: 70vh;
+	background: url('../images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#homepage_pic h1{
+	font-family: HelveticaLTStd-BoldCond_0;
+	font-size: 1.5rem;
+	text-align: center;
+	color: white;
+	padding: 20px;
+	text-shadow: 2px 2px rgba(0, 0, 0, .6);
+}
+
+
+
+#what_we_do{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 250px;
+	
+	margin: auto;
+}
+
+#what_we_do h2{
+	text-align: center;
+	font-family: Gotham-Light;
+	font-size: 1rem;
+	font-style: normal;
+	color: #ff6b01;
+}
+
+
+#services{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	flex-wrap: wrap;
+	min-height: 450px;
+	background: #00aeef;
+	padding: 50px 0 80px 0;
+	
+}
+
+#services h3{
+	font-family: Gotham-Thin;
+	font-size: 2rem;
+	color: white;
+	font-style: normal;
+	padding: 60px 0 40px 0;
+}
+
+#services .service_1{
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	border: 1px solid rgba(255,255,255,.3);
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px;
+
+}
+
+#services .service_1 p{
+	text-align: justify-all;
+	font-size: 0.9rem;
+}
+
+#services .service_1 i{
+	font-size: 3rem;
+	padding: 20px 0 20px 0;
+}
+
+#services .service_list{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	color: white;
+	font-family: Gotham-Book;
+}
+
+#background{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 300px;
+	font-family: Gotham-Thin;
+	background: black;
+}
+
+
+#background .info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	width: 48vw;
+	padding: 20px;
+}
+
+#background .info p{
+	color: white;
+	font-size: 1rem;
+	text-align: justify;
+}
+
+#background .city_pic{
+	background: url('../images/nathan-dumlao-1qsbplLDUa8-unsplash_bw.jpg') no-repeat;
+	background-size: 100%;
+	width: 50vw;
+	min-height: 300px;
+}
+
+
+
+
+#mission_vision{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 300px;
+	margin: auto;
+	text-align: center;
+	padding: 50px 0 50px 0;
+	font-family: Gotham-Thin;
+}
+
+#mission_vision p{
+	width: 60vw;
+}
+
+
+#closing_tag{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	min-height: 200px;
+	background: #ff6b01;
+	color: white;
+	font-family: Gotham-Thin;
+}
+
+#closing_tag p{
+	width: 55%;
+	text-align: center;
+}
+
+
+
+
+#mobile_notice{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	background: #ff6b01;
+	min-height: 30px;
+	width: 100vw;
+	bottom: 0px;
+	left: 0;	
+	position: fixed;
+
+}
+
+#mobile_notice p{
+	font-size: 0.5rem;
+	color: white;
+	font-family: Gotham-Book;
+	text-align: center;
+	width: 80vw;
+	padding: 10px;
+}
+
+
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	
+	background: black;
+	padding: 20px;
+}
+
+footer .our_sectors{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* background: red; */
+	
+	color: white;
+	font-family: Gotham-Book;
+}
+
+footer .our_sectors ul{
+	list-style-type: none;
+	line-height: 30px;
+}
+
+footer .our_sectors .sector_col{
+	width: 30%;
+	/* background: green; */
+}
+
+footer .our_sectors .sector_col_contact{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+
+footer .our_sectors .sector_col_contact .lower_logo{
+	width: 70px;
+	height: 70px;
+	background: url('../images/hilltop_recruitment_logo_bw.png') no-repeat;
+	background-size: 100%;
+}
+
+footer hr{
+	border: 1px solid rgba(255,255,255,.2);
+}
+
+footer .lowest_info{
+	display: flex;
+	align-items: center;
+	color: white;
+	font-family: Gotham-Thin;
+	font-size: 0.8rem;
+	margin: auto;
+}
+
+footer .lowest_info a{
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APPLICATION PAGE */
+#application_info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	min-height: 400px;
+}
+
+#application_info h2{
+	font-family: Gotham-Thin;
+	padding: 100px 0 10px 0;
+	font-size: 3rem;
+}
+
+#application_info p{
+	font-family: Gotham-Book;
+	text-align: center;
+	width: 75vw;
+	padding: 20px;
+}
+
+
+#application_form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #ff6b01;
+	min-height: 500px;
+	padding: 30px 20px 30px 20px;
+	margin: auto;
+}
+
+
+
+#application_form form input{
+	padding: 20px;
+	border: none;
+	color: #ff6b01;
+	width: 300px;
+	margin-bottom: 1px;
+}
+
+#application_form form select{
+	padding: 20px;
+	border: none;
+	color: #ff6b01;
+	width: 300px;
+	margin-bottom: 1px;
+}
+
+#application_form form textarea{
+	padding: 20px;
+	border: none;
+	color: #ff6b01;
+	width: 300px;
+}
+
+#application_form button{
+	background: none;
+	border: 1px solid white;
+	color: white;
+	padding: 10px;
+	width: 200px;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	font-family: Gotham-Thin;
+	margin: 30px 0 10px 0;
+}
+
+#application_form button:hover{
+	background: white;
+	cursor: pointer;
+	color: #ff6b01;
+	font-family: Gotham-Book;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THANK YOU PAGE */
+#thank_you_message{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	min-height: 00px;
+	font-family: Gotham-Book;
+	text-align: center;
+}
+
+#thank_you_message p{
+	width: 80vw;
+}
+
+#thank_you_message i{
+	color: #ff6b01;
+	font-size: 3rem;
+
+	margin: 20vh 0 20px 0;	
+}
+
+#thank_you_message button{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	width: 200px;
+	color: #ff6b01;
+	padding: 0 10px 0 10px;
+	background: none;
+	border: 1px solid #ff6b01;
+	border-radius: 8px;
+	margin: 20px 0 30px 0;
+	cursor: pointer;
+}
+
+#thank_you_message button i{
+	margin: 0;
+}
+
+
+#volunteer_name{
+	color: #ff6b01;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+	footer{
+		height: 50vh;
+	}
+
+	footer .our_sectors .sector_col{
+		display: none;
+	}
+
+	footer .our_sectors hr{
+		display: none;
+	}
+
+	footer .our_sectors .sector_col_contact{
+		width: 50%;
+		font-size: 3vw;
+		text-align: center;
+	}
+
+	footer .lowest_info{
+		font-size: 2.5vw;
+		text-align: center;
+	}
+
+	#closing_tag{
+		padding: 20px 0 20px 0;
+	}
+
+	#closing_tag p{
+		width: 75%;
+	}
+
+	#mission_vision p{
+	width: 80vw;
+	}
+
+	#services .service_1{
+		width: 95vw;
+		margin-bottom: 30px;
+	}
+
+	#background .info{
+		width: 100vw;
+
+	}
+
+	#background .city_pic{
+		width: 100vw;
+	}
+
+	#what_we_do h2{
+		width: 80vw;
+	}
+
+	#homepage_pic h1{
+		font-size: 6vw;
+		line-height: 8vw;
+	}
+
+	#top_header{
+		display: none;
+	}
+}
