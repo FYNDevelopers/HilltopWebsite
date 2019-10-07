@@ -177,5 +177,5 @@ function hilltopRecruitmentSendMessage(){
 
 /*function to display contact person name*/
 function thankPerson(){
-  document.getElementById("volunt_name").innerHTML = 'Dear ' + sessionStorage.getItem('ContactPersonName') + ','
+  document.getElementById("volunteer_name").innerHTML = 'Dear ' + sessionStorage.getItem('ContactPersonName') + ','
 }
