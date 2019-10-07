@@ -1,4 +1,4 @@
-
+ 
 
 
 //application request
@@ -176,6 +176,6 @@ function hilltopRecruitmentSendMessage(){
 
 
 /*function to display contact person name*/
-function confirmApplicant(){
-  document.getElementById("volunteer_name").innerHTML = 'Dear ' + sessionStorage.getItem('ContactPersonName') + ','
+function thankPerson(){
+  document.getElementById("volunt_name").innerHTML = 'Dear ' + sessionStorage.getItem('ContactPersonName') + ','
 }
