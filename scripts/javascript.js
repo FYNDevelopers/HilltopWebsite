@@ -101,7 +101,81 @@ function exitThankYouPage(){
   window.location.replace("index.html")
 }
 
-
+/*function to display name of applicant on thank you page*/
 function confirmApplicant(){
   document.getElementById("volunteer_name").innerHTML = 'Dear ' + sessionStorage.getItem('ApplicantName') + ','
+}
+
+
+
+
+
+
+
+
+
+
+
+/*function send message from contact page*/
+
+function hilltopRecruitmentSendMessage(){
+
+  var Fname = document.getElementById("Fname").value
+  var Lname = document.getElementById("Lname").value
+  var Category = document.getElementById("Category").value
+  var email = document.getElementById("email").value
+  var Subject = document.getElementById("Subject").value
+  var Message = document.getElementById("Message").value
+
+
+
+    if (
+      Fname.length<3 || 
+      Lname.length<3 ||
+      Category=='You are a'  ||
+      email.length<3 ||
+      Subject.length<3 ||
+      Message.length<10 
+      ) {
+
+      alert('Please fill in all details')
+    }
+
+
+      else {
+    const scriptContactMessage = 'https://script.google.com/macros/s/AKfycbzLOOEzYT1cGviM6UACkZCUFaSls5Bn9812fQVQDImkdo5Hjug/exec?action=message'
+    var MessageRequest = scriptContactMessage+
+                              '&Fname='+Fname+
+                              '&Lname='+Lname+
+                              '&Category='+Category+
+                              '&email='+email+
+                              '&Subject='+Subject+
+                              '&Message='+Message
+
+    var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function() { 
+          if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+              var res = JSON.parse(this.responseText)
+
+            if (res == 'Message Received') {
+              sessionStorage.setItem("ContactPersonName", Fname)
+              window.location.replace("message_sent.html") 
+          }
+          
+      }
+      xmlHttp.open("GET", MessageRequest, true); // true for asynchronous 
+      xmlHttp.send();
+    
+  }
+
+
+}
+
+
+
+
+
+/*function to display contact person name*/
+function confirmApplicant(){
+  document.getElementById("volunteer_name").innerHTML = 'Dear ' + sessionStorage.getItem('ContactPersonName') + ','
 }
