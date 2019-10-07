@@ -42,7 +42,7 @@ body{
 }
 
 #notice p a{
-	/* text-decoration: none */;
+	text-decoration: underline;
 	color: white;
 }
 
@@ -403,16 +403,19 @@ footer .lowest_info a{
 
 #application_form{
 	display: flex;
+
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	background: #ff6b01;
 	min-height: 500px;
-	padding: 30px 20px 30px 20px;
+	padding: 80px 20px 80px 20px;
 	margin: auto;
 }
 
+#application_form form{
 
+}
 
 #application_form form input{
 	padding: 20px;
@@ -420,6 +423,7 @@ footer .lowest_info a{
 	color: #ff6b01;
 	width: 300px;
 	margin-bottom: 1px;
+	/* text-align: center; */
 }
 
 #application_form form select{
@@ -428,6 +432,7 @@ footer .lowest_info a{
 	color: #ff6b01;
 	width: 300px;
 	margin-bottom: 1px;
+	/* text-align: center; */
 }
 
 #application_form form textarea{
@@ -435,6 +440,8 @@ footer .lowest_info a{
 	border: none;
 	color: #ff6b01;
 	width: 300px;
+	margin-bottom: 1px;
+	/* text-align: center; */
 }
 
 #application_form button{
@@ -509,10 +516,172 @@ footer .lowest_info a{
 	margin: 0;
 }
 
+#thank_you_message button:hover{
+	cursor: pointer;
+	background: #ff6b01;
+	color: white;
+}
+
+#thank_you_message button i:hover{
+	color: white;
+}
 
 #volunteer_name{
 	color: #ff6b01;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT US PAGE */
+#contact_form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	padding: 50px;
+	font-family: Gotham-Book;
+	
+}
+
+#contact_form h2{
+	font-family: Gotham-Thin;
+	padding: 80px 0 30px 0;
+	font-size: 3rem;
+	text-align: center;
+}
+
+#contact_form p{
+	text-align: center;
+}
+
+#contact_form form{
+	display: flex;
+	flex-direction: column;
+}
+
+#contact_form form label{
+	padding: 10px 0 5px 0;
+	/* color: #ff6b01; */
+}
+
+#contact_form form input{
+	background: #ff6b01;
+	border: none;
+	padding: 20px;
+	color: white;
+	width: 300px;
+	border-radius: 5px;
+}
+
+#contact_form textarea{
+	background: #ff6b01;
+	border: none;
+	padding: 20px;
+	color: white;
+	width: 300px;
+	border-radius: 5px;
+}
+
+#contact_form select{
+	background: #ff6b01;
+	border: none;
+	padding: 20px;
+	color: white;
+	width: 300px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+#contact_form button{
+	border: 1px solid #ff6b01;
+	background: none;
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	border-radius: 5px;
+	color: #ff6b01;
+	font-size: 1.5rem;
+	width: 200px;
+}
+
+#contact_form button:hover{
+	background: #ff6b01;
+	cursor: pointer;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+/* TERMS & cONDITIONS */
+#terms_and_conditions{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	text-align: justify;
+	font-family: Gotham-Book;
+}
+
+#terms_and_conditions h2{
+	margin: 100px 0 20px 0;
+}
+
+#terms_and_conditions h3{
+	padding: 50px 0 10px 0;
+}
+
+
+
+
+
+
+/* TERMS & CONDITIONS */
+#p_policy{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	text-align: justify;
+	font-family: Gotham-Book;
+
+}
+
+#p_policy h2{
+	margin: 100px 0 20px 0;
+}
+
+#p_policy li{
+	font-weight: bold;
+	padding: 40px 0 10px 0;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -549,6 +718,22 @@ footer .lowest_info a{
 	footer .lowest_info{
 		font-size: 2.5vw;
 		text-align: center;
+	}
+
+	#application_form form{
+	display: flex;
+	flex-direction: column;
+
+	}
+
+	#application_form form input{
+		width: 80vw;
+	}
+	#application_form form select{
+		width: 80vw;
+	}
+	#application_form form textarea{
+		width: 80vw;
 	}
 
 	#closing_tag{
