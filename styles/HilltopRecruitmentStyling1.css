@@ -120,7 +120,7 @@ body{
 
 #homepage_pic h1{
 	font-family: HelveticaLTStd-BoldCond_0;
-	font-size: 1.5rem;
+	font-size: 3rem;
 	text-align: center;
 	color: white;
 	padding: 20px;
@@ -165,6 +165,7 @@ body{
 	color: white;
 	font-style: normal;
 	padding: 60px 0 40px 0;
+	width: 100vw;
 }
 
 #services .service_1{
